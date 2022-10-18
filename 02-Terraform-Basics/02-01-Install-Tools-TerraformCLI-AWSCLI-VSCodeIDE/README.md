@@ -1,33 +1,40 @@
 # Terraform & AWS CLI Installation
 
-### Step-01: Introduction
+## Step-01: Introduction
 - Install Terraform CLI
 - Install AWS CLI
 - Install VS Code Editor
 - Install HashiCorp Terraform plugin for VS Code
 
 
-### Step-02: MACOS: Terraform Install
-- [using brew](https://docs.brew.sh/Installation)
+## Step-02: MACOS: Terraform Install
+- [Download Terraform MAC](https://www.terraform.io/downloads.html)
+- [Install CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+- Unzip the package
 ```
-brew install terraform
-```
+# Copy binary zip file to a folder
+mkdir /Users/<YOUR-USER>/Documents/terraform-install
+COPY Package to "terraform-install" folder
 
-### Verify Version
-```
-terraform -v
-```
+# Unzip
+unzip <PACKAGE-NAME>
+unzip terraform_0.14.3_darwin_amd64.zip
 
+# Copy terraform binary to /usr/local/bin
+echo $PATH
+mv terraform /usr/local/bin
 
-### Step-03: MACOS: IDE for Terraform - VS Code Editor
-```
-## For Mac M1
-brew install vitual-studio-code 
+# Verify Version
+terraform version
 
-## Latest Mac Pro
+# To Uninstall Terraform (NOT REQUIRED)
+rm -rf /usr/local/bin/terraform
+``` 
 
-brew install vscode
-```
+## Step-03: MACOS: IDE for Terraform - VS Code Editor
+- [Microsoft Visual Studio Code Editor](https://code.visualstudio.com/download)
+- [Hashicorp Terraform Plugin for VS Code](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
+
 
 ### Step-04: MACOS: Install AWS CLI
 - [AWS CLI Install](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
@@ -49,7 +56,7 @@ sudo rm -rf /usr/local/aws-cli
 ```
 
 
-### Step-05: MACOS: Configure AWS Credentials 
+## Step-05: MACOS: Configure AWS Credentials 
 - **Pre-requisite:** Should have AWS Account.
   - [Create an AWS Account](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start)
 - Generate Security Credentials using AWS Management Console
@@ -71,26 +78,8 @@ aws s3 ls
 cat $HOME/.aws/credentials 
 ```
 
-### Step-06: WindowsOS: Terraform & AWS CLI Install
-### Open powershell on your search bar as admin
-- [Install Choco](https://chocolatey.org/install)
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-```
-### Download Terraform using choco
-```
-choco install terraform
-```
-### Download git && vs code on windows using choco
-```
-choco install vscode 
-choco install fit
-```
-### Download aws-cli on windows using choco
-```
-choco install aws-cli
-```
-### Addional links
+## Step-06: WindowsOS: Terraform & AWS CLI Install
+- [Download Terraform](https://www.terraform.io/downloads.html)
 - [Install CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - Unzip the package
 - Create new folder `terraform-bins`
@@ -101,9 +90,3 @@ choco install aws-cli
 ## Step-07: LinuxOS: Terraform & AWS CLI Install
 - [Download Terraform](https://www.terraform.io/downloads.html)
 - [Linux OS - Terraform Install](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-
-### Creating a GitLap Account for source code
-- [Signing to GitLap](https://gitlab.com/users/sign_in)
-- Create An Account and feel in your details
-- check you email and verify our account.
-- Once that is done next create a dome project
