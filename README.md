@@ -1,4 +1,4 @@
-# Understanding Terraform The hard Way | Real-World 
+# Understanding Terraform The hard Way | With Real-World demo
 
 ## Course Modules
 01. Infrastructure as Code (IaC)
