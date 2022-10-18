@@ -2,7 +2,7 @@
 
 ## Course Modules
 01. Infrastructure as Code (IaC)
-  - Install Tools on MacOs, LinuxOS and WindowsOS
+  - Install Tools on MacOs, LinuxOS and WindowsOS 
 02. Terraform Basics
   - Terraform Command Basics
   - Terraform Language Syntax
@@ -21,6 +21,8 @@
 - You will learn in detail about Terrafrom State, Local and Remote Backends. 
 - You will learn and implement all Terraform Provisioners 
 - You will learn and implement Terraform Modules with 2 types (Public Modules and Local Modules)
+- Build a continous intergretion pipeline using Jenkins to pull, plan and deploy your code. 
+- perform migration of database from one `AWS ACCOUNT` to `ANOTHER ACCOUNT` using Terraform 
 
 
 ## Are there any course requirements or prerequisites?
