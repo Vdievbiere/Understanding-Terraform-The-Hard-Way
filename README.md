@@ -91,7 +91,7 @@
 37. Random Resource
 39. Terraform Import 
 
-## Building CICD Pipeline using Jenkins and GitLab action
+## Building Ci/Cd Pipeline using Jenkins and GitLab action
 - jenkins installation and Jenkinsfile configuration
 - GitLab action ci/ cd workflow
 
