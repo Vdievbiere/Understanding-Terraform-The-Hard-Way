@@ -6,6 +6,7 @@
   - terraform apply
   - terraform destroy
   - terraform console
+  -terraform refresh
 
 
 # """"""
@@ -21,3 +22,8 @@
 # [{}] => list(map)
 # {[]} => map(list)
 # """""
+
+
+## use element to achieve this - it will assign the first Ip for us-east 1
+## ["us-east-1a", "us-east-1b", "us-east-1a", "us-east-1b", "us-east-1a", "us-east-1b"]
+## ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24", "10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
