@@ -28,6 +28,7 @@ terraform workspace show
 terraform validate -var-file sbx.tfvars
 terraform plan -var-file sbx.tfvars
 terraform apply -var-file sbx.tfvars
+terraform destroy -var-file sbx.tfvars
 
 ```
 

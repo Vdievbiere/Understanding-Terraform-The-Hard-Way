@@ -1,5 +1,3 @@
-## Onboarding an application
-
 #! /bin/bash
 sudo yum update -y
 sudo rpm -e --nodeps mariadb-libs-*
@@ -11,7 +9,7 @@ sudo yum install -y telnet
 sudo amazon-linux-extras enable java-openjdk11
 sudo yum clean metadata && sudo yum -y install java-11-openjdk
 mkdir /home/ec2-user/registration_app  && cd /home/ec2-user/registration_app
-wget https://github.com/Bkoji1150/kojitechswebapp/releases/download/v1.2.0/kojitechs-registration-app.war -p /home/ec2-user/registration_app
+wget https://github.com/Bkoji1150/kojitechswebapp/releases/download/v1.2.0/kojitechs-registration-app.war -P /home/ec2-user/registration_app
 export DB_HOSTNAME=${hostname}
 export DB_PORT=${db_port}
 export DB_NAME=${db_name}
