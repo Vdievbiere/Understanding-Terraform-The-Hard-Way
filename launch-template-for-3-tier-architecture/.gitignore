@@ -1,0 +1,7 @@
+# these files are not pushed terraform 
+.idea
+.terraform.lock.hcl
+.terraform
+.gitlab-ci.yml
+.*.tfstate
+*.plan
